@@ -15,6 +15,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 
 public class WifiP2pActivity extends ActionBarActivity implements WifiP2pManager.ConnectionInfoListener, WifiP2pManager.PeerListListener{
@@ -139,6 +140,21 @@ public class WifiP2pActivity extends ActionBarActivity implements WifiP2pManager
             @Override
             public void onFailure(int reason) {
 
+            }
+        });
+    }
+
+    protected void disconnect() {
+        wifiP2pManager.removeGroup(channel, new WifiP2pManager.ActionListener() {
+            @Override
+            public void onSuccess() {
+                Toast.makeText(getApplicationContext(), "Disconnect", Toast.LENGTH_SHORT).show();
+
+            }
+
+            @Override
+            public void onFailure(int reason) {
+                Toast.makeText(getApplicationContext(), "Failed to disconnect:" + reason, Toast.LENGTH_SHORT).show();
             }
         });
     }

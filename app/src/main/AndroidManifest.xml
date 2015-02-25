@@ -2,9 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="csc495.wifip2pdemo" >
 
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -30,6 +30,10 @@
         <activity
             android:name=".WifiP2pActivity"
             android:label="@string/title_activity_wifi_p2p" >
+        </activity>
+        <activity
+            android:name=".ConnectedActivity"
+            android:label="@string/title_activity_connected" >
         </activity>
     </application>
 

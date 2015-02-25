@@ -1,7 +1,10 @@
 package csc495.wifip2pdemo;
 
+import android.content.Intent;
 import android.net.wifi.p2p.WifiP2pDevice;
 import android.net.wifi.p2p.WifiP2pDeviceList;
+import android.net.wifi.p2p.WifiP2pInfo;
+import android.provider.Settings;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -55,6 +58,19 @@ public class MainActivity extends WifiP2pActivity {
     protected void setConnected() {
         super.setConnected();
         Toast.makeText(getApplicationContext(), "Connected to Peer", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onConnectionInfoAvailable(WifiP2pInfo info) {
+        super.onConnectionInfoAvailable(info);
+
+        Intent intent = new Intent(this, ConnectedActivity.class);
+        Bundle bundle = new Bundle();
+
+        bundle.putParcelable("Info", info);
+
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 
     @Override

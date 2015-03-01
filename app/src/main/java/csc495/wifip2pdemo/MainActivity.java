@@ -64,13 +64,16 @@ public class MainActivity extends WifiP2pActivity {
     public void onConnectionInfoAvailable(WifiP2pInfo info) {
         super.onConnectionInfoAvailable(info);
 
-        Intent intent = new Intent(this, ConnectedActivity.class);
-        Bundle bundle = new Bundle();
+        if(info.groupFormed) {
 
-        bundle.putParcelable("Info", info);
+            Intent intent = new Intent(this, ConnectedActivity.class);
+            Bundle bundle = new Bundle();
 
-        intent.putExtras(bundle);
-        startActivity(intent);
+            bundle.putParcelable("Info", info);
+
+            intent.putExtras(bundle);
+            startActivity(intent);
+        }
     }
 
     @Override

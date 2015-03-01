@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\aaschaef\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="C:\Users\aaschaef\AndroidStudioProjects\WifiP2PDemo\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-51fe936b85e8b1de0c98517c1509c175f26e65f1.jar" />
-    </item>
-    <item
-        jar="C:\Users\aaschaef\AndroidStudioProjects\WifiP2PDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="C:\Users\aaschaef\AndroidStudioProjects\WifiP2PDemo\app\build\intermediates\pre-dexed\debug\classes-9265cdc826304a971829d73c363f8b833a62d193.jar" />
-    </item>
-    <item
-        jar="C:\Users\aaschaef\AndroidStudioProjects\WifiP2PDemo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="C:\Users\aaschaef\AndroidStudioProjects\WifiP2PDemo\app\build\intermediates\pre-dexed\debug\classes-ab6078cf4f372cd98c6d3eca5dec12f372d10777.jar" />
-    </item>
-    <item
-        jar="C:\Users\aaschaef\AndroidStudioProjects\WifiP2PDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jar="C:\Users\Andrew Schaefer\Documents\GitHub\WifiP2pDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="C:\Users\aaschaef\AndroidStudioProjects\WifiP2PDemo\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-6787fd68f69c9b6f2eb14a8e89f9868df4b8468e.jar" />
+        <dex dex="C:\Users\Andrew Schaefer\Documents\GitHub\WifiP2pDemo\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-c295458cb2f182b8d63d4e327e3e5e0fd38940ef.jar" />
+    </item>
+    <item
+        jar="C:\Users\Andrew Schaefer\Documents\GitHub\WifiP2pDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Andrew Schaefer\Documents\GitHub\WifiP2pDemo\app\build\intermediates\pre-dexed\debug\classes-f7214b2383d61064461074cee66df7bd14a1fc07.jar" />
+    </item>
+    <item
+        jar="C:\Users\Andrew Schaefer\Documents\GitHub\WifiP2pDemo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Andrew Schaefer\Documents\GitHub\WifiP2pDemo\app\build\intermediates\pre-dexed\debug\classes-29f3d50216fde9a7f792a05c9e0108095989560d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Andrew Schaefer\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Andrew Schaefer\Documents\GitHub\WifiP2pDemo\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-2b00b949a0fd7348e18e69113309b2595b012316.jar" />
     </item>
 
 </items>

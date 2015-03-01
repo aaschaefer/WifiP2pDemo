@@ -20,7 +20,7 @@ import java.net.Socket;
 
 public class ConnectedActivity extends ActionBarActivity {
 
-    ServerSocket server;
+
     Socket client;
     String host;
     int port = 1234;
@@ -38,29 +38,11 @@ public class ConnectedActivity extends ActionBarActivity {
         TextView tv = (TextView) findViewById(R.id.textViewPeerName);
 
         if(info.isGroupOwner) {
-            try {
-                server = new ServerSocket(port);
-                client = server.accept();
-
-                InputStream is = client.getInputStream();
-                InputStreamReader isr = new InputStreamReader(is);
-                tv.setText(isr.read());
-            }catch (IOException e) {
-                e.printStackTrace();
-            }
+            ServerAsyncTask serverAsyncTask = new ServerAsyncTask(getApplicationContext(), findViewById(R.id.textViewPeerName), info.groupOwnerAddress);
+            serverAsyncTask.execute(port);
         } else {
-            client = new Socket();
-            //host = info.groupOwnerAddress.getHostAddress();
-            try {
-                client.bind(null);
-                client.connect((new InetSocketAddress(info.groupOwnerAddress, port)), 500);
-
-                OutputStream os = client.getOutputStream();
-                OutputStreamWriter osw = new OutputStreamWriter(os);
-                osw.write("Test");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            ClientAsyncTask clientAsyncTask = new ClientAsyncTask(getApplicationContext(), findViewById(R.id.textViewPeerName), info.groupOwnerAddress);
+            clientAsyncTask.execute(port);
         }
     }
 

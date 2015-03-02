@@ -46,11 +46,9 @@ public class ServerAsyncTask extends AsyncTask<Integer, String, Void> {
 
             //while(client.isConnected()) {
 
-                InputStream is = client.getInputStream();
-                InputStreamReader isr = new InputStreamReader(is);
-                BufferedReader bufferedReader = new BufferedReader(isr);
-                publishProgress(bufferedReader.readLine());
-                //statusText.append(bufferedReader.readLine());
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(client.getInputStream()));
+                String temp = bufferedReader.readLine();
+                publishProgress(temp);
             //}
 
             server.close();

@@ -38,17 +38,14 @@ public class ClientAsyncTask extends AsyncTask<Integer, String, Void> {
 
         port = params[0];
         client = new Socket();
-        //host = info.groupOwnerAddress.getHostAddress();
         publishProgress("Attempting to connect to: "+host);
 
         try {
-            //client.bind(null);
             client.connect((new InetSocketAddress(host, port)),0);
 
-            OutputStream os = client.getOutputStream();
-            OutputStreamWriter osw = new OutputStreamWriter(os);
-            PrintWriter pw = new PrintWriter(new BufferedWriter(osw));
+            PrintWriter pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(client.getOutputStream())));
             pw.println("test");
+            pw.flush();
             client.close();
         } catch (IOException e) {
             publishProgress(e.getMessage());
